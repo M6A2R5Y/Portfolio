@@ -22,11 +22,13 @@ Open the [index.html](index.html) file in any web browser to view the interface.
 ## 📂 Project Structure
 ```text
 Portfolio/
-├── index.html       # Portfolio entry point and semantic structure
-├── styles.css       # Core styling, layouts, variables, and animations
-├── script.js        # Dynamic filtering, scrolling effects, and theme toggling
-├── LICENSE          # MIT License file
-└── README.md        # Project documentation
+├── index.html          # Portfolio entry point and semantic structure
+├── styles.css          # Core styling, layouts, variables, and animations
+├── script.js           # Dynamic filtering, scrolling effects, and theme toggling
+├── Mary Kinyanjui.pdf  # Up-to-date professional CV (1-page, referees removed)
+├── cv_print.html       # Clean HTML source template for compiling the PDF CV
+├── LICENSE             # MIT License file
+└── README.md           # Project documentation
 ```
 
 ## 📝 License
