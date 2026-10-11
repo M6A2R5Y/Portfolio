@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Intersection Observer for Scroll Animations ---
-  const revealElements = document.querySelectorAll('.reveal, .timeline-item, .project-card, .skills-card');
+  const revealElements = document.querySelectorAll('.reveal, .timeline-item, .project-card, .skills-card, .cert-card-featured');
   
   // Add base reveal class to observe non-hero components
   revealElements.forEach((el, index) => {
@@ -111,4 +111,82 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   revealElements.forEach(el => observer.observe(el));
+
+  // --- Certificate Modal & Copy Credential ID Logic ---
+  const certModal = document.getElementById('cert-modal');
+  const certPreviewTrigger = document.getElementById('cert-preview-trigger');
+  const btnQuickPreview = document.getElementById('btn-quick-preview');
+  const certModalClose = document.getElementById('cert-modal-close');
+  const certModalCloseBtn = document.getElementById('cert-modal-close-btn');
+  const certModalBackdrop = document.getElementById('cert-modal-backdrop');
+
+  const openCertModal = () => {
+    if (certModal) {
+      certModal.classList.add('active');
+      certModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeCertModal = () => {
+    if (certModal) {
+      certModal.classList.remove('active');
+      certModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (certPreviewTrigger) {
+    certPreviewTrigger.addEventListener('click', openCertModal);
+    certPreviewTrigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openCertModal();
+      }
+    });
+  }
+
+  if (btnQuickPreview) {
+    btnQuickPreview.addEventListener('click', openCertModal);
+  }
+
+  if (certModalClose) certModalClose.addEventListener('click', closeCertModal);
+  if (certModalCloseBtn) certModalCloseBtn.addEventListener('click', closeCertModal);
+  if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal && certModal.classList.contains('active')) {
+      closeCertModal();
+    }
+  });
+
+  // Copy Credential ID
+  const copyBtn = document.getElementById('copy-credential-btn');
+  const credentialIdVal = document.getElementById('credential-id-val');
+
+  if (copyBtn && credentialIdVal) {
+    copyBtn.addEventListener('click', async () => {
+      const textToCopy = credentialIdVal.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        const copyText = copyBtn.querySelector('.copy-text');
+        const defaultIcon = copyBtn.querySelector('.copy-icon-default');
+        const successIcon = copyBtn.querySelector('.copy-icon-success');
+
+        copyBtn.classList.add('copied');
+        if (copyText) copyText.textContent = 'Copied!';
+        if (defaultIcon) defaultIcon.style.display = 'none';
+        if (successIcon) successIcon.style.display = 'inline-block';
+
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          if (copyText) copyText.textContent = 'Copy ID';
+          if (defaultIcon) defaultIcon.style.display = 'inline-block';
+          if (successIcon) successIcon.style.display = 'none';
+        }, 2200);
+      } catch (err) {
+        console.error('Failed to copy credential ID:', err);
+      }
+    });
+  }
 });
