@@ -10,7 +10,7 @@ Open the [index.html](index.html) file in any web browser to view the interface.
 
 - **Modern Design**: Responsive CSS Grid and Flexbox layout featuring glassmorphism and smooth transition animations.
 - **Theme Switcher**: Instant transition between Light and Dark modes, persistent using browser `localStorage`.
-- **Dynamic Projects Filter**: Clean, tabbed interactive filters for showcasing TypeScript/JS, Python/ML, C, and Java repositories.
+- **Dynamic Projects Filter**: Clean, tabbed interactive filters for showcasing TypeScript/JS and Python/ML repositories.
 - **Certifications & Verified Credentials**: Dedicated credential showcase with crisp certificate rendering, 1-click credential ID clipboard copying, direct verification links, and an interactive full-size lightbox preview modal.
 - **Visual Skill Meters**: Graphic progress bars showing proficiency across support channels, systems (Zendesk, Shopify, Gorgias), and development tools/languages.
 - **Timeline Milestones**: Professionally structured resume milestones tracing remote operations roles.

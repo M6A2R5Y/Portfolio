@@ -3,8 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mary Kinyanjui | Portfolio</title>
-  <meta name="description" content="Portfolio of Mary Kinyanjui - Customer Service Representative, Remote Support professional, and Mathematics & Computer Science graduate.">
+  <!-- SEO: Primary meta tags (target keyword: AI-assisted developer) -->
+  <title>AI-Assisted Developer in Kenya | Mary Kinyanjui</title>
+  <meta name="description" content="Mary Kinyanjui is an AI-assisted developer in Nairobi, Kenya, open to remote roles. Projects in TypeScript, Python and JavaScript. View portfolio and CV.">
+  <meta name="author" content="Mary Kinyanjui">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://m6a2r5y.github.io/Portfolio/">
+
+  <!-- Google Search Console verification: paste your code from Search Console (URL prefix > HTML tag), then uncomment -->
+  <!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE"> -->
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://m6a2r5y.github.io/Portfolio/">
+  <meta property="og:title" content="AI-Assisted Developer in Kenya | Mary Kinyanjui">
+  <meta property="og:description" content="AI-assisted developer in Nairobi, Kenya, open to remote roles. Projects in TypeScript, Python and JavaScript.">
+  <meta property="og:site_name" content="Mary Kinyanjui Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI-Assisted Developer in Kenya | Mary Kinyanjui">
+  <meta name="twitter:description" content="AI-assisted developer in Nairobi, Kenya, open to remote roles. Projects in TypeScript, Python and JavaScript.">
+
+  <!-- Structured data: helps Google understand who this site is about -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mary Kinyanjui",
+    "jobTitle": "AI-Assisted Developer",
+    "url": "https://m6a2r5y.github.io/Portfolio/",
+    "email": "mailto:kinyanjuimary516@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Technical University of Mombasa"
+    },
+    "knowsAbout": ["JavaScript", "TypeScript", "Python", "HTML", "CSS", "SQL", "Large Language Models", "Technical Support"],
+    "sameAs": ["https://github.com/M6A2R5Y"]
+  }
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +55,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <header class="navbar">
@@ -56,14 +100,14 @@
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-badge reveal">
-            <span class="badge-dot"></span> Available for Remote Support & Dev Roles
+            <span class="badge-dot"></span> Open to AI-Assisted Development & Remote Tech Roles
           </div>
           <h1 class="hero-title reveal">
-            Connecting Tech Expertise <br>
-            <span class="gradient-text">with Exceptional Support</span>
+            AI-Assisted Developer <br>
+            <span class="gradient-text">with Real-World Support Experience</span>
           </h1>
           <p class="hero-subtitle reveal">
-            Hi, I'm <strong>Mary Kinyanjui</strong>. A Mathematics & Computer Science graduate who blends analytical problem solving with extensive remote customer support experience. I design solutions and resolve complex technical inquiries with ease.
+            Hi, I'm <strong>Mary Kinyanjui</strong>, an AI-assisted developer based in Nairobi, Kenya. As a Mathematics & Computer Science graduate, I build projects with AI-assisted coding in TypeScript, Python and JavaScript, and bring hands-on remote technical support experience to every team I join.
           </p>
           <div class="hero-cta reveal">
             <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -88,7 +132,7 @@
               <p class="code-line indent"><span class="code-prop">education</span>: <span class="code-val">"B.Sc. Mathematics & CS"</span>,</p>
               <p class="code-line indent"><span class="code-prop">certification</span>: <span class="code-val">"AI & LLMs (Cyberiad)"</span>,</p>
               <p class="code-line indent"><span class="code-prop">skills</span>: [<span class="code-val">"Zendesk"</span>, <span class="code-val">"Shopify"</span>, <span class="code-val">"AI/LLMs"</span>, <span class="code-val">"Python"</span>],</p>
-              <p class="code-line indent"><span class="code-prop">focus</span>: <span class="code-val">"Operations & Tech Support"</span>,</p>
+              <p class="code-line indent"><span class="code-prop">focus</span>: <span class="code-val">"AI-Assisted Development"</span>,</p>
               <p class="code-line indent"><span class="code-prop">firstContactResolution</span>: <span class="code-val">"95%"</span></p>
               <p class="code-line">};</p>
               <p class="code-line"><span class="code-comment">// Ready to drive customer delight and support excellence</span></p>
@@ -114,7 +158,7 @@
         </div>
         <div class="about-grid">
           <div class="about-text-column">
-            <h3>Bridging Science, Math & Customer Happiness</h3>
+            <h3>An AI-Assisted Developer Bridging Code, Math & Customer Happiness</h3>
             <p>
               My academic background in <strong>Mathematics and Computer Science</strong> from the Technical University of Mombasa has trained me to analyze complex data systems and find logical structures in problem solving.
             </p>
@@ -234,14 +278,13 @@
         <div class="section-header align-center">
           <h2 class="section-title">Projects Showcase</h2>
           <div class="section-underline"></div>
-          <p class="section-description">A curated selection of technical projects showing my coding abilities and problem solving approach.</p>
+          <p class="section-description">A curated selection of AI-assisted projects showing my coding abilities and problem solving approach.</p>
         </div>
 
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">All Projects</button>
           <button class="filter-btn" data-filter="javascript">JavaScript / TS</button>
           <button class="filter-btn" data-filter="python">Python / ML</button>
-          <button class="filter-btn" data-filter="other">C / Java / HTML</button>
         </div>
 
         <div class="projects-grid">
@@ -274,7 +317,7 @@
             </div>
             <div class="project-content">
               <h3>AI Chatbot Interface</h3>
-              <p>A interactive chat component interface built with JavaScript, allowing simulated conversations. Features asynchronous message flows and styling transitions.</p>
+              <p>An interactive chat component interface built with JavaScript, allowing simulated conversations. Features asynchronous message flows and styling transitions.</p>
               <div class="project-tech">
                 <span>JavaScript</span>
                 <span>Async UI</span>
@@ -312,49 +355,11 @@
             </div>
             <div class="project-content">
               <h3>Intro to ML Learning</h3>
-              <p>A repository containing initial machine learning model implementations, statistical datasets classification, and linear algorithms.</p>
+              <p>A repository containing initial machine learning model implementations, statistical dataset classification, and linear algorithms.</p>
               <div class="project-tech">
                 <span>Python</span>
                 <span>SciPy</span>
                 <span>Data Analysis</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 5 -->
-          <div class="project-card" data-category="other">
-            <div class="project-header">
-              <span class="project-tag">C Language</span>
-              <a href="https://github.com/M6A2R5Y/printf" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View printf repository">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </a>
-            </div>
-            <div class="project-content">
-              <h3>Custom Printf Implementation</h3>
-              <p>Recreation of the standard C library <code>printf</code> function, focusing on buffer parsing, format specifiers handling, and system-level I/O output.</p>
-              <div class="project-tech">
-                <span>C</span>
-                <span>Pointers & Memory</span>
-                <span>System Programming</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 6 -->
-          <div class="project-card" data-category="other">
-            <div class="project-header">
-              <span class="project-tag">Java</span>
-              <a href="https://github.com/M6A2R5Y/MY-SIMPLE-PROJECTS" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Simple Projects repository">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </a>
-            </div>
-            <div class="project-content">
-              <h3>Java Utilities & Algorithms</h3>
-              <p>A package containing object-oriented design patterns implementations, data structures, and mathematical algorithms in Java.</p>
-              <div class="project-tech">
-                <span>Java</span>
-                <span>OOP</span>
-                <span>Data Structures</span>
               </div>
             </div>
           </div>
@@ -552,7 +557,7 @@
                 <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
               </li>
               <li>
-                <span class="skill-name">C / Java / SQL Databases</span>
+                <span class="skill-name">SQL Databases</span>
                 <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
               </li>
               <li>
@@ -591,7 +596,7 @@
               </a>
               <div class="info-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 5.42 3.3 9.4 6.44 10a3.37 3.37 0 0 0 1.94-1v-2.61c-3.14.35-3-.94-3-.94a3 3 0 0 0-1.5-1.5c-1-.7.1-.6.1-.6a2.37 2.37 0 0 1 1.7 1.2c.9 1.6 2.4 1.1 3 1a2 2 0 0 1 .6-1.2c-2.5-.3-5.2-1.3-5.2-5.7a4.42 4.42 0 0 1 1.2-3.1 4.07 4.07 0 0 1 .1-3s1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2a4.07 4.07 0 0 1 .1 3 4.42 4.42 0 0 1 1.2 3.1c0 4.4-2.7 5.4-5.2 5.7a2.76 2.76 0 0 1 .8 2v3.5a2.44 2.44 0 0 0 1.8 1c3.14-.6 6.44-4.58 6.44-10A10 10 0 0 0 12 2z"></path></svg>
-                <span>Mombasa, Kenya</span>
+                <span>Nairobi, Kenya</span>
               </div>
             </div>
           </div>
@@ -658,7 +663,7 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Mary Kinyanjui. All rights reserved.</p>
+      <p>&copy; 2026 Mary Kinyanjui, AI-Assisted Developer, Nairobi, Kenya. All rights reserved.</p>
       <div class="footer-socials">
         <a href="Mary Kinyanjui.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV">Resume (PDF)</a>
         <a href="https://github.com/M6A2R5Y" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
