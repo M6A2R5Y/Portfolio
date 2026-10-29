@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m6a2r5y.github.io/Portfolio/sitemap.xml
